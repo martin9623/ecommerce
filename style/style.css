@@ -1,0 +1,143 @@
+/* ----- Import ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----- Global ----- */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ----- Variables ----- */
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #FB5607;
+}
+
+:root {
+    --f-logo: 24px;
+    --w-logo: 500;
+
+    --f-menu: 24px;
+
+    --f-search: 16px;
+
+    --w-border: 1px;
+    --r-border: 3px;
+
+    --t-transition: 0.1s;
+}
+
+/* ----- Header ----- */
+
+.header {
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav__logo {
+    color: var(--white);
+    font-size: var(--f-logo);
+    font-weight: var(--w-logo);
+    width: 30%;
+}
+
+.navmenu {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* barra de busqueda */
+
+.search {
+    border: solid var(--w-border) var(--white);
+    border-radius: var(--r-border);
+    background-color: var(--white);
+    height: 40px;
+}
+
+.search__input {
+    border: none;
+    height: 100%;
+    background: none;
+    margin: 0 0 0 10px;
+    font-size: var(--f-search);
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__btn {
+    margin: 0 5px 0 0;
+    background: none;
+    border: none;
+    border-radius: var(--r-border);
+    color: var(--primary);
+    padding: 10px;
+}
+
+.search__btn:hover {
+    color: var(--white);
+    background: var(--primary);
+    cursor: pointer;
+    transition: var(--t-transition);
+}
+
+/* ----- Menu ----- */
+
+.menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__item {
+    padding: 0%;
+    margin: 0%;
+}
+
+.menu__item__link {
+    color: var(--white);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: var(--r-border);
+    font-size: var(--f-menu);
+}
+
+.menu__item__link:hover {
+    color: var(--primary);
+    background-color: var(--white);
+    transition: var(--t-transition);
+}
+
+/* ----- Main ----- */
