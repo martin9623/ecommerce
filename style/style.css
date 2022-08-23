@@ -175,14 +175,21 @@ li {
 
 /* banner */
 
-.banner {
-    text-align: center;
+/* .carousel {} */
+
+.carousel__container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.banner__img {
+.carousel__container__img {
     width: 100%;
     max-width: 1440px;
 }
+
+
+
 
 /* productos */
 
